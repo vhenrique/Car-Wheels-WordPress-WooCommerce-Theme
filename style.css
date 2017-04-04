@@ -1,0 +1,164 @@
+/*
+Theme Name: Adrenalin
+Theme URI: http://www.commercegurus.com/themes/adrenalin
+Author: CommerceGurus / Vitor Henrique
+Author URI: http://www.vhenrique.com
+Description: Adrenalin is a beautiful WordPress & WooCommerce theme that will get your pulse racing. This theme was updated and corrected to Colonial Store rules by Vitor Henrique
+Version: 1.3
+License: GNU General Public License
+License URI: license.txt
+Text Domain: commercegurus
+Domain Path: /languages/
+Tags: light, white, two-columns, three-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, flexible-header, sticky-post, theme-options, translation-ready
+*/
+
+.home .vc_carousel-indicators{
+	display: none
+}
+
+.carros-home img{
+	opacity: 0.4
+}
+
+.carros-home img:hover{
+	opacity: 1
+}
+
+.carros-home h2{
+	    font-size: 18px;
+    font-weight: 400;
+    padding:none;
+}
+.wp_last_content{
+	padding:40px 0px;
+}
+
+
+.list-group-horizontal{
+	padding: 0;
+}
+.list-group-horizontal .list-group-item {
+	display: inline-block;
+    width: 33.3%;
+    font-size: 13px;
+    padding: 3px;
+}
+.list-group-horizontal .list-group-item{
+	margin: 0;
+}
+.list-group-horizontal .list-group-item:first-child {
+	border-top-right-radius:0;
+	border-bottom-left-radius:4px;
+}
+.list-group-horizontal .list-group-item:last-child {
+	border-top-right-radius:4px;
+	border-bottom-left-radius:0;
+}
+.subfooter .paymentMethods li{
+	border: none;
+	display: inline-block;
+	margin: 0 10px;
+	text-align: center;
+}
+.subfooter ul.paymentMethods li:nth-child(2){
+	margin-left: 0;
+}
+.subfooter .paymentMethods li img{
+	max-width: 64px;
+}
+.subfooter .paymentMethods li.clearSale{
+	background: #FFF; 
+	padding: 10px 5px; 
+	border-radius: 5px;
+}
+.single .single_add_to_cart_button{
+	padding: 0 70px!important;
+}
+
+.summary .cart button.single_add_to_cart_button{
+	background-color: #48D459!important;
+}
+
+.amountList{list-style: none; padding: 0!important;}
+.amountList li{border: solid 1px #CCC; padding: 5px;}
+.shipping-calculator-button, div.wc-proceed-to-checkout .checkout-button{background-color: #48d459; color: #FFF; padding: 5px 25px; margin: 10px 0; display: inline-block;}
+
+.listPosition{position: relative;}
+.highlights{margin-top: 49px; position: absolute; z-index: 10; width: 101%; background: rgba(255, 255, 255, 0.5); padding: 0;}
+.highlights li{list-style: none; text-transform: uppercase; text-align: center; padding: 10px 0;}
+.highlights li i{margin: 0 15px;}
+
+.mainSlider{list-style: none; padding: 0; position: relative; height: 345px;}
+.mainSlider li{opacity: 0; transition: opacity 1s;}
+.mainSlider li img{width: 100%;}
+.mainSlider li.on, .mainSlider li:first-of-type{opacity: 1; transition: opacity 1s;}
+.mainSlider .actionSlider{padding: 10px 15px; background: #222; opacity: 0.8; color: #FFF; font-family: monospace; font-size: 30px; display: inline-block; position: absolute; z-index: 5; transition: opacity 0.5s; margin: 10% 0;}
+.mainSlider .actionSlider:hover{opacity: 0.4; text-decoration: none; transition: opacity 0.5s;}
+.mainSlider .actionSlider:focus{text-decoration: none;}
+.slidePrev{left: 20px;}
+.slideNext{right: 20px;}
+
+
+div.row div.filial{position: absolute; width: 98%; opacity: 0; transition: opacity 0.5s;}
+div.row div.filial:first-child{opacity: 1;} 
+div.row div.on{opacity: 1; transition: 0.5s;}
+
+.cg-product-cta a.add_to_cart_button{padding: 6px 22px; margin-top: 10px; display: inline-block; text-transform: uppercase;}
+.archive .cg-product-info a span.price, .single-product .entry-summary p.price, .home .cg-product-info a span.price{display: none;}
+.cg-product-cta a.add_to_cart_button:hover{color: #FFF!important;}
+.single-product .entry-summary p.fswp_calc{display: block;}
+
+.accordion{padding-left: 0!important;}
+.accordion div.list-item{padding: 5px 10px 25px 25px;}
+.accordion div.on{background: #eee;}
+
+.entry-summary div, .entry-summary form{display: block; clear: both;}
+
+hr.cartSeparator{margin: 10px 0; border: solid 1px #000;}
+
+body.woocommerce-checkout .woocommerce-info a.showlogin{color: #48d459!important;}
+
+.amountCreditCard{position: relative;}
+.amountCreditCard a{display: block; padding: 15px 0;}
+.amountCreditCard .amountList{position: absolute; background: #f8f8f8; z-index: 0; opacity: 0; transition: opacity 0.5s; text-align: center; width: 70%;}
+.amountCreditCard .amountList td, .amountCreditCard .amountList th{text-align: center; display: inline-block; width: 50%; border-bottom: solid 1px #d0d0d0; padding: 5px 0;}
+.amountCreditCard .amountList tr:last-child > td{border: none;}
+
+.amountCreditCard:hover > .amountList{opacity: 1; z-index: 150; transition: all 0.5s;}
+
+@media (max-width: 1200px){
+	div.mobile-search{
+		width: 100%;
+    	margin: 50px 0 0 0;
+	}
+	.mobile-search .widget_product_search form input[type="submit"]{
+	    position: absolute;
+	    width: 0;
+	    top: 2px;
+	    right: 15px;
+	    height: 28px;
+	    border: none;
+	    background: none;
+	    z-index: 5;
+	    padding-left: 20px;
+	    color: #FFF;
+	}
+}
+
+@media (max-width: 768px){
+	#woocommerce-product-search-field{width: 100%;}
+	.jcarousel_best_sellers{display: block; margin: 0 auto;}
+	.highlights{display: none;}
+	.mainSlider{height: 185px;}
+}
+
+@media (max-width: 550px){
+	.mainSlider {
+	    height: 150px;
+	}
+}
+@media (max-width: 350px){
+	.mainSlider {
+	    height: 90px;
+	}
+}
